@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+:root { /* para adicionar variáveis, sempre começá-la com "--":
+    --variavel: conteudo; */
+    --cor0: #C5EBD6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+* { /* usar "*" para adicionar uma configuração global, que se aplica à todo o documento */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0); /* var(--cor0) para definir a cor como a definida na variável cor0 */
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transition-duration: 0.5s; /* para adicionar um efeito de transição entre a versão padrão e o hover */
+}
+
+main {
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family:var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent); /* para o gradiente ir da cor1 até transparente */
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px; /* 15px topo e baixo, 0px esquerda e direita */
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 2em; /* para configurar o espaço vertical entre as linhas, onde 1em = nenhum espaço */
+}
+
+main strong { /* para configurar os elementos <strong> do documento */
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px; /* 2px horizontal, 6px vertical */
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block; /* para que a imagem seja mostrada como um block/box level */
+    margin: auto; /* para fazer com que a imagem que está em block level fique centralizada */
+}
+
+div.video { /* seletor da classe */
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57.5%;
+    position: relative; /* para permitir que o posicionamento da caixa seja relativo ao conteúdo */
+}
+
+div.video > iframe { /* seletor do vídeo integrado dentro da caixa */
+    position: absolute; /* definir a posição como absoluta para fazer com que ele sempre se mantenha centralizado na caixa, em conjunto das configurações abaixo */
+    top: 5%; /* distância do topo da caixa */
+    left: 5%; /* distância da esquerda da caixa */
+    width: 90%; /* aproveitamento da largura da caixa */
+    height: 90%; /* aproveitamento da altura da caixa */
+    /* OBS - VALORES IRÃO VARIAR DE VÍDEO PARA VÍDEO E DE SITE PARA SITE, FAZER TESTES INDIVIDUALMENTE EM CADA SITE PARA CONFIGURÁ-LO DE FORMA CORRETA */
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /* valor negativo para que a margem cresça para fora */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside > ul {
+    list-style-position: inside; /* para configurar a posição do início da lista no bloco onde está contida */
+    list-style-type: '\2714\00A0\00A0'; /* para configurar o estilo/caractere na lista, onde \2714 = emoji de checkmark, \00A0 = espaço NBSP (espaço sem quebra)
+    OBS - Isso não é compatível com todo navegador! */
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+color: var(--cor1);
+}

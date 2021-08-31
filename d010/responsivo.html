@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 320px; /* define a largura mínima do elemento */
+            max-width: 800px; /* define a largura máxima do elemento */
+            margin: auto;
+        }
+
+        img {
+            width: 100%; /* para definir que a imagem ocupe 100% da largura, sempre que possível */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium nisi odio adipisci numquam voluptatum corporis similique qui optio eligendi dolores quidem repellat perferendis. Laborum vero animi sint fugiat rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero est nisi delectus eaque iusto, sed quo! Vel dicta dolore quisquam optio! Repellat obcaecati illo laborum eligendi, ipsum eos provident aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium natus perspiciatis sapiente id necessitatibus quo illum quis reiciendis? Facilis provident cumque debitis incidunt consectetur obcaecati neque placeat! Commodi, nostrum neque.</p>
+        <picture> <!-- para carregar uma imagem de tamanho diferente quando chegar em certa largura -->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Foto - Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium nisi odio adipisci numquam voluptatum corporis similique qui optio eligendi dolores quidem repellat perferendis. Laborum vero animi sint fugiat rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero est nisi delectus eaque iusto, sed quo! Vel dicta dolore quisquam optio! Repellat obcaecati illo laborum eligendi, ipsum eos provident aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium natus perspiciatis sapiente id necessitatibus quo illum quis reiciendis? Facilis provident cumque debitis incidunt consectetur obcaecati neque placeat! Commodi, nostrum neque.</p>
+    </main>
+</body>
+</html>
