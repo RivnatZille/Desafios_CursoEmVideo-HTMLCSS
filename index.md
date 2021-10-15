@@ -15,3 +15,5 @@
     <li><a href="https://rivnatzille.github.io/Desafios_CursoEmVideo-HTMLCSS/d009/index.html" target="_blank">09 - Seus Vídeos Favoritos</a></li>
     <li><a href="https://rivnatzille.github.io/Desafios_CursoEmVideo-HTMLCSS/d010/index.html" target="_blank">10 - Desafio Site do Android</a></li>
 </ul>
+
+<p>Desafios feitos por Lucas Victore Zille.
