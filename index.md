@@ -1,7 +1,3 @@
-<head>
-<title>Desafios de HTML5 e CSS3 - Curso em Vídeo</title>
-</head>
-<body>
 <h1>Desafios de HTML5 e CSS3 - Curso em Vídeo</h1>
 
 <p>Nesta página você consegue ter acesso ao resultado final dos desafios propostos em ambos Módulos 01 e 02 do Curso de HTML5 e CSS3 da plataforma <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo<a>.
@@ -19,4 +15,3 @@
     <li><a href="https://rivnatzille.github.io/Desafios_CursoEmVideo-HTMLCSS/d009/index.html" target="_blank">09 - Seus Vídeos Favoritos</a></li>
     <li><a href="https://rivnatzille.github.io/Desafios_CursoEmVideo-HTMLCSS/d010/index.html" target="_blank">10 - Desafio Site do Android</a></li>
 </ul>
-</body>
